@@ -35,7 +35,6 @@ book_add_btn.addEventListener("click", addBookToLibrary)
 function addBookToLibrary() {
 
     const book_container = document.querySelector("#books-container");
-
     const temp = document.getElementById("book-template");
     const book = temp.content.querySelector(".book");
     book_copy = document.importNode(book, true);
@@ -50,14 +49,17 @@ function addBookToLibrary() {
     const pages_input = document.querySelector('#pages-input').value;
     const read_input = document.querySelector('#read-input').value;
 
+    book_object = new Book(title_input, author_input, pages_input, read_input);
+    
     title.textContent = title_input;
     author.textContent = author_input;
     pages.textContent = pages_input;
-    read.textContent = read_input;
+    read.textContent = (read_input === "yes" ? "Read": "Not read yet");
 
     book_container.appendChild(book_copy);
-
-    bookList.push(new Book(title, author, pages, read));
+    bookList.push(book_object);
+    
+    console.log(bookList);
 
     
 }
