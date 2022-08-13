@@ -17,10 +17,11 @@
     grid-area: 'input';
 }
 
-#inputs>input{
+#inputs>input {
     margin-bottom: 20px;
 }
-#inputs>select{
+
+#inputs>select {
     margin-top: 10px;
 }
 
@@ -41,7 +42,7 @@ p {
 
 h1 {
     text-align: center;
-    
+
 }
 
 label {
