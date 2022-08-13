@@ -1,0 +1,92 @@
+#main-container {
+    display: grid;
+    grid-template-areas: 'input books';
+    gap: 15px;
+}
+
+#books-container {
+    grid-area: 'books';
+    margin-right: 20px;
+
+}
+
+#inputs {
+    background-color: #17C3B2;
+    margin-left: 20px;
+    padding: 20px;
+    grid-area: 'input';
+}
+
+#inputs>input{
+    margin-bottom: 20px;
+}
+#inputs>select{
+    margin-top: 10px;
+}
+
+.book {
+    background-color: #FE6D73;
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    display: inline;
+    margin-left: 10px;
+
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+label {
+    font-size: 20px;
+}
+
+#title {
+    background-color: #227c9d;
+    margin-bottom: 50px;
+
+    padding: 1px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fbf6ec;
+    margin: 0;
+}
+
+.delete-btn {
+    padding: 3px;
+    margin-right: 20px;
+    top: 50%;
+    background-color: #FFCB77;
+    width: 100px;
+    float: right;
+    font-size: 25px;
+    border-style: none;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-style: none;
+}
+
+select {
+    height: 30px;
+    border-style: none;
+    width: 50px;
+}
+
+#btn-add {
+    width: 100%;
+    margin-top: 10px;
+    border-style: none;
+    height: 30px;
+}

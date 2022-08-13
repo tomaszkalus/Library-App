@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Library app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="A JavaScript library app" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="title">
+        <h1>Library 📚</h1>
+    </div>
+    <div id="main-container">
+        <div id="inputs">
+            <h1>Add book 📕</h1>
+            <label for="title-input">Title:</label><br>
+            <input type=text id="title-input"><br>
+
+            <label for="author-input">Author:</label><br>
+            <input type=text id="author-input"><br>
+
+            <label for="pages-input">Number of pages:</label><br>
+            <input type=number id="pages-input"><br>
+
+            <label for="read-input">Did you read?</label><br>
+            <select id="read-input">
+                <option value=true>Yes</option>
+                <option value=false>No</option>
+            </select><br>
+
+            <button id="btn-add">ADD</button>
+        </div>
+
+        <div id="books-container">
+            <template id="book-template">
+                <div class="book" data-bookid="1">
+                    <p class="book-title">1984</p>
+                    <p>|</p>
+                    <p class="book-author">George Orwell</p>
+                    <p>|</p>
+                    <p class="book-pages">237 pages</p>
+                    <p>|</p>
+                    <p class="book-read">Read</p>
+                    <p>|</p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </template>
+
+            <div class="book" data-bookid="1">
+                <p class="book-title">1984</p>
+                <p>|</p>
+                <p class="book-author">George Orwell</p>
+                <p>|</p>
+                <p class="book-pages">237 pages</p>
+                <p>|</p>
+                <p class="book-read">Read</p>
+                <p>|</p>
+                <button class="delete-btn">Delete</button>
+            </div>
+
+            <div class="book" data-bookid="1">
+                <p class="book-title">1984</p>
+                <p>|</p>
+                <p class="book-author">George Orwell</p>
+                <p>|</p>
+                <p class="book-pages">237 pages</p>
+                <p>|</p>
+                <p class="book-read">Read</p>
+                <p>|</p>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
