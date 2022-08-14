@@ -29,14 +29,13 @@
             <label for="pages-input">Number of pages:</label><br>
             <input type=number id="pages-input"><br>
 
-            <label for="read-input">Did you read?</label><br>
-            <select id="read-input">
+            <label for="read-input">Did you read?</label>
+            <!-- <select id="read-input">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
-            </select><br>
-
+            </select><br> -->
+            <input type="checkbox" id="read-input2">
             <button id="btn-add">ADD</button>
-            <button id="btn-add-test">ADD TEST</button>
         </div>
 
         <div id="books-container">
@@ -48,8 +47,8 @@
                     <p>|</p>
                     <p class="book-pages">237 pages</p>
                     <p>|</p>
-                    <p class="book-read">Read</p>
-                    <p>|</p>
+                    <!-- <p class="book-read">Read</p> -->
+                    <button class="book-read"></button>
                     <button class="delete-btn">Delete</button>
                 </div>
             </template>
